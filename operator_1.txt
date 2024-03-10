@@ -1,0 +1,109 @@
+print("hello dipika here")
+"""a=1
+print(a)
+type(a)
+b="sudh"
+e="mati"
+print(b)
+print(b+e)
+type(b)
+c=3+4j
+c.real
+d=4
+f=a+d
+print(f)
+
+
+
+
+# list examples
+# It is a collection of heterogeneous datatype
+
+L= [2,3,4,1,"sudha",3.9,9]
+print(L[1])
+print(L[-5])
+
+# insert new value to existing value
+L[-5]=300
+print(L[-5])
+
+print(L)
+#list becomes
+L= [2,3,300,1,"sudha",3.9,9]
+
+
+#Operators
+
+# 1. arithmetic operator
+p=int(input("enter 1st no"))
+q=int(input("enter 1st no"))
+add=(p+q)
+print("addition is",add)
+sub=(p-q)
+print("addition is",sub)
+mul=(p*q)
+print("multiplication is",mul)
+div=(p%q)
+print("division is",div)
+rem=(p//q)
+print("remainder is",rem)
+
+# 2.Comparison operator
+
+if(p==q):
+    print("we are equal")
+elif(p<=q):
+    print("p is less than equal to q")
+elif (p > q):
+        print("p is greater than q")
+elif (p >= q):
+        print("p is greater than equal to q")
+elif (p != q):
+        print("p is not equal to q")
+else:
+        print("we have no relation")
+     """
+# 3.Assignment operator :
+a=5         # = is operator
+a+=5        # a=a+5 is performing....+= is assignment operator
+print(a)
+
+a-=4         #a=a-5 is perform........-+ is assignmet operator
+print(a)
+"""
+
+
+ # 4. logical operator
+   a = 5
+   print(a > 3 and a < 10)  # if both condition are true only then it returns True, otherwise returns False
+
+   b = 10
+   print(b < 11 | b > 2)  # if  any one condition is true then also it returns True, otherwise returns False
+
+   x = 5
+   print(not (x < 3 and x > 10))  # if both conditions are true it returns False
+   # if both conditions are false it returns true
+
+
+#. Bitwise operator
+print(bin(p))
+print(bin(q))
+print(p&q)
+
+ # right shift operator
+a= 8 
+bin(a)           # if wee take e.g. 1000
+print(a)    
+print(a>>2)      #10 is remain bcoz we are shifting two last two zeroes
+print(a>>3)      #  1 is remain bcoz we are shifting last 3 digits to right
+print(a>>4)      # 0 is remain bcoz we are shifting last 4 digits to right side....no digit is remain
+                   # it gives zero as input
+# Left shift operator
+b= 20
+print(bin(20))   #10100
+print(b<<2)      #we add 2 extra zeroes on given number......print(bin(80))
+print(b<<3)      # we add 3 extra zeroes on given number.....print(bin(160))
+print(b<<4)      # we add 4 extra zeroes on given number.....print(bin(320))
+
+ """
+
