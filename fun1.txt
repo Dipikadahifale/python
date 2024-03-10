@@ -1,0 +1,116 @@
+#Functions in python
+"""
+def test1() :
+    return "sudha"
+print(test1())
+
+def test2() :
+    return [5,"dipika",3.2,9,[3,2,4]]
+print(test2())
+
+def test3():
+    a=11%3
+    return a
+print(test3())
+
+#Function with Arguments
+def test4(a,b,c):
+    d=(a+b)//c
+    return d
+print(test4(2,4,2))
+
+# addition of two numbers taking from users
+a=int(input("enter 1st num"))
+b=int(input("enter 2nd num"))
+def test5(a,b):
+    c=a+b
+    return c
+print(test5(a,b))
+
+# Adding/ Concate two strings using function input taking from users
+a=input("enter 1st string")
+b=input("enter 2nd string")
+def test8(a,b):
+    c=a+b
+    return c
+print(test8(a,b))
+
+
+# Extract integer and float type from list taking input from user
+l1=[]
+list1 = [2,3,11,90,"sanju",89.8,22,[33,22,11]]
+for i in list1:
+    if type(i)==int or type(i)==float:
+        l1.append(i)
+print(l1)
+
+# Extract interger and float type element as well extract list element also
+
+
+list1 = [2,3,11,90,"sanju",89.8,22,[33,22,11]]
+def test9(list1):
+   l1=[]
+   for i in list1:
+     if type(i)==list:
+        for j in i:
+            l1.append(j)
+     else:
+        if type(i)==int or type(i)==float:
+             l1.append(i)
+   return l1
+print(test9(list1))
+
+
+# Use of Lambda Functions :
+#1. addition of two number using lambda fun
+add = lambda a,b: a+b
+print(add(3,4))
+
+# convert temperature from celcius to farenhite
+C_to_farenhite = lambda c : 9/5*c+32
+print(C_to_farenhite(45))
+
+#finding the maximum value on basis of condition
+find_max = lambda a,b: a if a>b else b
+print(find_max(34,12))
+
+#Find the length of given string
+str ="SANJIVALIDEEPALI"
+find_len = lambda str: len(str)
+print(find_len(str))
+
+# use of MAP FUNCTION
+
+#  perform addition
+l1=[1,2,3,4,5]
+l2=[11,22,33,44,55]
+def add(a,b):
+    return a+b
+print(list(map(add,l1,l2)))  # map fun takes two arguements 1.function 2.iterator or list
+           #OR
+l1=[1,2,3,4,5]
+l2=[11,22,33,44,55]
+print(list(map(lambda a,b:a+b,l1,l2)))
+
+#perform square of each number
+l1=[2,4,5,8,9]
+|def sq(a):
+    return a**2
+print(list(map(sq,l1)))
+       #OR
+
+l1=[2,4,5,8,9]
+print(list(map(lambda a:a**2,l1)))
+"""
+
+class pwskills2():
+    def __init__(self, phone_no, email_id, id): #it is a constructor.....it takes the data
+        self.phone_no=phone_no
+        self.email_id=email_id
+        self.id=id
+    def details(self):
+        return self.phone_no,self.email_id,self.id
+rohan = pwskills2(888832323,"sudh@gmail.com",34)
+print(rohan.phone_no)
+
+

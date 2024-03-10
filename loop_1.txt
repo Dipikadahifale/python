@@ -1,0 +1,71 @@
+
+# LOOPS IN PYTHON
+#1. WHILE LOOP- EXECUTE THE SET OF STATEMENTS AS LONG AS CONDITION IS TRUE
+
+a=int(input("enter first num"))
+i=2
+while i<a:                        # output is
+     print(i)                     # 2 3 4 5 6 7 this is else part
+     i = i + 1
+else:
+    print("this is else part")   #
+
+
+#1.BREAK - WE CAN BREAK THE LOOP EVEN CONDITION IS TRUE
+n=int(input("enter first num"))
+i=1
+while i<n:
+     print(i)         # output is.......assume we enter 8
+     i=i + 1         # 1 2 3 4
+     if i==5:        # else part will not be executed
+       break
+else:
+    print("this is else part")
+
+
+#2. CONTINUE - WE CAN STOP THE CURRENT ITERATION (RESUME THE LOOP) AND CONTINUE WITH NEXT
+n=int(input("enter first num"))
+i=1
+while i<n:
+    i = i + 1
+    print(i)         # output is..........if we enter 8
+    if i == 3:        # 1 2  4 6 7 8 this is else part
+      continue
+    print(i)
+else:
+    print("this is else part")
+
+
+# 2. FOR LOOP - WE CAN EXECUTE A SET OF STATEMENT, ONCE FOR EACH ITEM IN A LIST,TUPLE,SET etc OR iterating over a sequence
+
+str1= input("enter the string")  # if we enter string SANJIVANI....OUTPUT IS _ S A N J I V A N I
+for i in  str1 :
+    print(i)
+
+# Extract one by one element from given list
+List1 =[2,12,23.4,"dips",8,"sanjivani",4,"hello"]  # <class 'int'>
+for i in List1:                                    # <class 'int'>
+    print(type(i))                                 #  <class 'float'>
+    if i==4   :                                    #  <class 'str'>
+      continue
+    print(i)                                      #  <class 'int'>
+else:                                             # <class 'str'>
+        print("stop the iterative recursion")
+
+
+# Create the Table of given Number using while loop
+num=int(input("enter the num"))
+i=1
+while i<=10:
+   print(num * i)
+   i = i + 1
+else:
+    print("table is succesfully generated!!!")
+
+
+# Create the table of given number using For Loop
+num=int(input("enter the num"))
+for i in range (1,11):
+    print(num*i)
+    i=i+1
+
