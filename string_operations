@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Nov 27 12:45:51 2024
+
+@author: Dipika Dahifale
+"""
+#########string#########
+s1="this is my string class"
+len(s1)
+s1.find("my") #find index of that word
+s1.count('z')
+s1.upper()
+print(s1[0])
+s1.title() #capatalize first letter of each word in whole string 
+s1.capitalize() #capatalize only first letter of whole string
+s="pwskills"
+print(s+1)
+print(s+'1')
+print(s+"sudh")
+print(s*3) #repeating 3 times
+s2="""dont"hello" touch me"""
+print(s2)
+s2.find("don't")
+
+
